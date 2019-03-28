@@ -7,17 +7,17 @@
   <input [(ngModel)]="User.quote">
   <p> {{ User.quote }} </p>
 
-  <ul>
-    <li appHighlight> {{ showMovies.movie1 }} </li>
-    <li> {{ showMovies.movie2 }} </li>
-    <li> {{ showMovies.movie3 }} </li>
-    <li> {{ showMovies.movie4 }} </li>
-    <li> {{ showMovies.movie5 }} </li>
-    <li> {{ showMovies.movie6 }} </li>
-    <li> {{ showMovies.movie7 }} </li>
-    <li> {{ showMovies.movie8 }} </li>
-    <li> {{ showMovies.movie9 }} </li>
-    <li> {{ showMovies.movie10 }} </li>
+  <ul *appDisplayMovies="showMovies">
+    <li appHighlight>Fast and Furious</li>
+    <li>Fast and Furious 2</li>
+    <li>Fast and Furious 3</li>
+    <li>Fast and Furious 4</li>
+    <li>Fast and Furious 5</li>
+    <li>Fast and Furious 6</li>
+    <li>Fast and Furious 7</li>
+    <li>Saw</li>
+    <li>Saw II</li>
+    <li>Saw III</li>
   </ul>
   </div>
   
